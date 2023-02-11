@@ -1,0 +1,232 @@
+.{
+    margin:0;
+    padding:0;
+}
+
+body{
+
+    text-align: center;
+    background-image:url(./Cards/casino12.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Kalam', cursive;
+    
+}
+
+.contenedor{
+    display: grid;    
+    grid-template-columns: repeat(2, 700px) ;
+    grid-template-rows: repeat(7,75px);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    list-style: none;
+    max-width: 800px;    
+    grid-gap: 10px;
+    grid-template-areas: 
+                        "header header"
+                        "section1 ."
+                        "section2 ."
+                        "section2 section7" 
+                        "section3 section7"
+                        "section4 section6"
+                        "section4 section6";                       
+                        
+}
+
+.titulo{
+    
+    grid-area: header;   
+    height: 10px;
+    width: 400px;
+    margin: auto;
+   
+
+}
+#titulo {
+    display: flex;
+    align-content: center;
+    max-width: 500%;
+    max-height: 900%;
+    padding: 0.PX;
+   }
+   
+
+.Ticrupier {
+    grid-area: section1;
+    color:black;
+    -webkit-text-stroke: 1px #F9C740;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin: 22px;  
+    font-size: 30px; 
+    width:100px;  
+    height: 10px;
+}
+
+
+
+
+.cartasCrupier{
+    grid-area: section2;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 400px;
+    padding: 0px;
+    margin: 22px;  
+  
+  }
+
+ .cartacru{
+   
+    display: flex;
+    justify-content: flex-start;
+    height: 130px;
+    width: 100px;
+    margin: 2px;
+    border-radius: 8px;
+
+  }
+    
+  .Tijugador{
+    grid-area: section3;   
+    color:black;
+    -webkit-text-stroke: 1px #F9C740;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin: 22px;  
+    font-size: 30px; 
+    width:100px;  
+    height: 10px;
+
+  }
+   
+  .cartasJugador{
+    grid-area: section4;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-between;
+    align-items: center;
+    height: 110px;
+    width: 400px;
+    padding: 0px;
+    margin: 22px;  
+  
+  }
+
+  .cartaj{
+    
+    display: flex;
+    justify-content: flex-start;
+    height: 130px;
+    width: 100px;
+    margin: 2px;
+    border-radius: 8px;
+
+  }
+
+  .totales{
+    grid-area:section7; 
+    color:#ffff;
+    -webkit-text-stroke: 1px #F9C740;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1px;
+    margin: -9px;  
+    font-size: 22px; 
+    width: 300px;
+    height: auto;  
+}
+
+#totalc , #totalj {
+    font-size: 49px;
+  
+
+}
+.botones{
+   
+    grid-area:section6;
+    display: flex;
+    flex-direction:row;
+    justify-content:end;
+    justify-items: center;
+    padding: 12px;
+    gap: 10px;
+    height: 60px;
+    width: 370px;
+    margin: 16px;
+    border-radius: 8px;
+    
+}
+
+#pedirCarta {
+    width: 115px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Kalam', cursive;
+    background-color:#F8F9F9 ;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    margin: 0px;
+    padding: 2px;
+    border: 2px solid #F9C740
+    ;
+}
+
+#quedarse{
+    width: 115px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Kalam', cursive;
+    background-color:#F8F9F9 ;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    margin: 0px;
+    padding: 2px;
+    border: 2px solid#F9C740;
+      
+
+}
+
+#reiniciar{
+    width: 115px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Kalam', cursive;
+    background-color:#F8F9F9 ;
+    color: black;
+    border-radius: 8px;
+    border: none;
+    margin: 0px;
+    padding: 2px;
+    border: 2px solid #F9C740;
+} 
+
+
+    @media screen and (max-width: 768px){
+        .contenedor{
+            grid-template-areas:"header header"
+                                "section1 ."
+                                "section2 ."
+                                "section2 ." 
+                                "section3 section6"
+                                "section4 ."
+                                "section4 section7";
+                                                     }
+    } 

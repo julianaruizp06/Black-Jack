@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Patua+One&family=Roboto:wght@100&family=Titan+One&display=swap&effect=shadow-multiple|3d-float" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>ejercicio1</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <img id="titulo" src="./Cards/BLCKNEGRO.jpg">
+        </div>
+
+        <div class="Ticrupier" >        
+        <h2>Crupier<span id="crupier"></span></h2>
+        </div>
+            
+            
+        <div class="cartasCrupier" id="cartas-crupier">
+
+            <div class="cartacru"   >
+            <img id="cartac1" src="./Cards/BACK.png" />
+            </div>
+          
+            <div class="cartacru">
+            <img id="cartac2" src="./Cards/BACK.png" />
+             </div>
+        </div>
+
+        <div class="Tijugador" >        
+            <h2>Jugador<span id="jugador"></span></h2>
+        </div>
+ 
+        <div class="cartasJugador" id="cartas-jugador">
+
+            <div class="cartaj"   >
+            <img id="cartaj1" src="./Cards/BACK.png" />
+            </div>
+          
+            <div class="cartaj">
+            <img id="cartaj2" src="./Cards/BACK.png" />
+            </div>
+             
+
+            
+        </div>
+
+        <div class="botones">
+            <button type="button" id="pedirCarta">Iniciar</button>
+            <button type="button" id="quedarse">Me quedo</button>
+            <button type="button" id="reiniciar">Reiniciar</button>
+        </div>
+                
+        <div class="totales">
+            <h3>Totales</h3>
+            
+            <div class="totalCru">
+                <h4><strong> Total Crupier :</strong></h4>
+                <div class="total"><span id="totalc"> 0 </span></div>
+              </div>
+
+              <div class="totalju">
+                <h4><strong> Total jugador :</strong></h4>
+                <div class="total"><span id="totalj"> 0 </span></div>
+        </div>
+ 
+        
+    </div>
+    <script src="./main.js"></script>
+
+
+</body>
+</html>
